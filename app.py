@@ -28,12 +28,10 @@ def list_routes():
     return jsonify({'routes': result, 'total': len(result)})
 
 
+@app.route('/api/candidate', methods=['GET'])
 def candidate():
     candidates = DATA_PROVIDER.get_candidates()
     return jsonify({'candidates': candidates, 'total': len(candidates)})
-
-
-app.add_url_rule('/api/candidate', 'candidate', candidate)
 
 
 @app.route('/api/candidate/<string:id>', methods=['GET'])
