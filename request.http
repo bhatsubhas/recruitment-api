@@ -1,0 +1,32 @@
+GET /api/candidate HTTP/1.1
+Host: 127.0.0.1:5000
+
+###
+GET /api/candidate/5329e0c0-d701-4b4f-8cfd-975ec71184ec HTTP/1.1
+Host: 127.0.0.1:5000
+
+###
+PUT /api/candidate/a1c00881-b6c0-41e6-a142-5e859c0bc39f/name/Smithson HTTP/1.1
+Host: 127.0.0.1:5000
+
+###
+GET /api/random/candidate HTTP/1.1
+Host: 127.0.0.1:5000
+
+###
+GET /api/random/candidate/2 HTTP/1.1
+Host: 127.0.0.1:5000
+
+###
+DELETE /api/candidate/15056c63-9bf7-4495-b0e8-00c3fa8a32c8 HTTP/1.1
+Host: 127.0.0.1:5000
+
+###
+POST /api/candidate HTTP/1.1
+Host: 127.0.0.1:5000
+Content-Type: application/json
+
+{
+    "first_name": "Subhas",
+    "last_name": "Bhat"
+}
